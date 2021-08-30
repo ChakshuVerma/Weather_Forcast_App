@@ -17,7 +17,7 @@ function initMap()
     {
         console.log(event);
 
-        var clientID= 'e9513f260b2bb4cfff509d2238e813fa';
+        var clientID= 'AIzaSyCUzhmoncnCYMWNh0BjBPmq0q4AXlRcv6w';
         var endPoint= 'https://api.darksky.net/forecast/';
         console.log(event.latLng.lat());
         var parameters= '/'+ event.latLng.lat() +',' +event.latLng.lng() ;
