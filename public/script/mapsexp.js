@@ -21,17 +21,13 @@ function initMap()
         zoom: 5,
         center: uluru
     });
-    // var marker = new google.maps.Marker({
-    //     position: uluru,
-    //     map: map,
-    //     animation:google.maps.Animation.DROP
-    // });
+    
     var Data=[];
     var cord;
     google.maps.event.addListener(map , 'click', function (event)
     {
 
-        var clientID= 'e9513f260b2bb4cfff509d2238e813fa';
+        var clientID= 'AIzaSyCUzhmoncnCYMWNh0BjBPmq0q4AXlRcv6w';
         var endPoint= 'https://api.darksky.net/forecast/';
         var parameters= '/'+ event.latLng.lat() +',' +event.latLng.lng() ;
         var url= endPoint + clientID + parameters;
